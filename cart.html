@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Jogo Bonito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Image 2 logo.jpeg" width="50px">
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/Redstore images/cart.png" width="30px" height="30px">
+            <img src="images/Redstore images/menu.png" class="menu-icon" onclick="menuToggle()" width="30px" height="30px">
+        </div>
+
+    </div>
+<!---------cart item details-->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/unique 1.5.jpeg" width="120px" height="120px">
+                        <div>
+                            <p>beautiful dresses</p>
+                            <small>Ksh. 3500</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                        
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh. 3500</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/dress 1.3.jpeg" width="120px" height="120px">
+                        <div>
+                            <p>beautiful dresses</p>
+                            <small>Ksh. 4200</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                        
+                    </div>
+                </td>
+                <td><input type="number" value="2"></td>
+                <td>Ksh. 4200</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/dress 2.4.jpeg" width="120px" height="120px">
+                        <div>
+                            <p>beautiful dresses</p>
+                            <small>Ksh. 4000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                        
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh. 4000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/dress 3.8.jpeg" width="120px" height="120px">
+                        <div>
+                            <p>beautiful dresses</p>
+                            <small>Ksh. 3800</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                        
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Ksh. 3800</td>
+            </tr>
+
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Ksh. 15500</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Ksh. 100</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Ksh. 15600</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+<!----------Footer---------> 
+    <div class="footer">
+        <div class="small-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our articles</h3>
+                </div>
+                <div class="footer-col-2">
+                    <img src="" alt="">
+                    <p>Reach out to our partners through this <a href="">link</a></p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Telegram</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4"> 
+                    <p>Promoting a trendy clothwear</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Ever Trendy Risper's Franchise </p>
+        </div>
+    </div>
+    <!--------------js for toggle menu---------->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        
+        function menuToggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            } else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
